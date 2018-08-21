@@ -1,30 +1,42 @@
-import {JsonParser} from '../index'
+import {DateParser, JsonParser} from '../index'
 
-test('Should parse simple json', () => {
+describe('JsonParser:Should parse simple json', () => {
 
   const obj = {
     a: 'a',
     b: null,
     c: [1, 2, 3, 'a', 0, '1'],
     d: {
-      da: 'da'
+      da: 'da',
     }
   }
 
-  const json = JSON.stringify(obj)
+  test('Should parse without date', () => {
 
-  expect(
-    new JsonParser().parse(json)
-  ).toEqual(obj)
+    const json = JSON.stringify(obj)
 
+    expect(
+      new JsonParser().parse(json)
+    ).toEqual(obj)
+
+  })
+
+  test('Should parse with date', () => {
+    obj.c = new Date()
+
+    const json = JSON.stringify(obj)
+
+    expect(
+      new JsonParser().parse(json)
+    ).not.toEqual(obj)
+
+    expect(
+      new JsonParser().withDateParserUTCISO8601().parse(json)
+    ).toEqual(obj)
+
+  })
 })
 
-// test('Should handling assertion with environment', () => {
-//   expect(process.env.NODE_ENV).toBe('test')
-//   expect.anything(() => {
-//     assert(true, 'do nothing ? %s', 'yes')
-//   })
-//   expect(() => {
-//     assert(false, 'do nothing ? %s', 'no')
-//   }).toThrow()
+// describe('JsonParser test Date',()=>{
+//
 // })

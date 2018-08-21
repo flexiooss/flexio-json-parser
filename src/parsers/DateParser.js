@@ -1,6 +1,10 @@
 import {ParserInterface} from './ParserInterface'
 import {assert, isRegex} from 'flexio-jshelpers'
 
+/**
+ * @constant
+ * @type {RegExp}
+ */
 export const UTC_ISO8601_RE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/
 
 const _DateFormatRE_ = Symbol(_DateFormatRE_)
@@ -28,7 +32,7 @@ export class DateParser extends ParserInterface {
   /**
    *
    * @return {DateParser}
-   * @constructor
+   * @static
    */
   static DateParserUTCISO8601() {
     return new DateParser(UTC_ISO8601_RE)

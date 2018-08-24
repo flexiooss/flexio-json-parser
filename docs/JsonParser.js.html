@@ -19,15 +19,15 @@
 
     <h1 class="page-title">Source: JsonParser.js</h1>
 
-    
 
 
 
-    
+
+
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>'use strict'
-import {ParserInterface} from './parsers/ParserInterface'
+import {ReviverParserInterface} from './parsers/ReviverParserInterface'
 import {DateParser} from './parsers/DateParser'
 import {assert} from 'flexio-jshelpers'
 
@@ -40,7 +40,7 @@ export class JsonParser {
   constructor() {
     /**
      *
-     * @type {Map&lt;string, ParserInterface>}
+     * @type {Map&lt;string, ReviverParserInterface>}
      * @private
      */
     this[_parser_] = new Map()
@@ -57,12 +57,12 @@ export class JsonParser {
 
   /**
    *
-   * @param {ParserInterface} parser
+   * @param {ReviverParserInterface} parser
    * @return {Symbol} token
    */
   addParser(parser) {
-    assert(parser instanceof ParserInterface,
-      'JsonParser:addParser: `parser` should be an instance of ParserInterface')
+    assert(parser instanceof ReviverParserInterface,
+      'JsonParser:addParser: `parser` should be an instance of ReviverParserInterface')
     const token = Symbol(parser.constructor.name)
     this[_parser_].set(token, parser)
     return token
@@ -95,7 +95,7 @@ export class JsonParser {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DateParser.html">DateParser</a></li><li><a href="JsonParser.html">JsonParser</a></li></ul><h3>Interfaces</h3><ul><li><a href="ParserInterface.html">ParserInterface</a></li></ul><h3>Global</h3><ul><li><a href="global.html#UTC_ISO8601_RE">UTC_ISO8601_RE</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DateParser.html">DateParser</a></li><li><a href="JsonParser.html">JsonParser</a></li></ul><h3>Interfaces</h3><ul><li><a href="ParserInterface.html">ReviverParserInterface</a></li></ul><h3>Global</h3><ul><li><a href="global.html#UTC_ISO8601_RE">UTC_ISO8601_RE</a></li></ul>
 </nav>
 
 <br class="clear">

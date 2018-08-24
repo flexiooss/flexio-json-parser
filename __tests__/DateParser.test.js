@@ -22,17 +22,17 @@ describe('DateParser', () => {
 
   })
 
-  test('Should `test` method use Regex at construct', () => {
+  test('Should `test` method use Regex from construction', () => {
     expect(
       new DateParser(/anything/).test()
     ).toBe(false)
 
     expect(
-      new DateParser(/anything/).test('anything')
+      new DateParser(/anything/).test('', 'anything')
     ).toBe(true)
 
     expect(
-      new DateParser(/anything/).test('what else')
+      new DateParser(/anything/).test('', 'what else')
     ).toBe(false)
 
   })
@@ -42,23 +42,23 @@ describe('DateParser', () => {
     const dateJSON = date.toJSON()
 
     expect(
-      new DateParser(/anything/).process(dateJSON)
+      new DateParser(/anything/).process('', dateJSON)
     ).toBeInstanceOf(Date)
 
     expect(
-      new DateParser(/anything/).process(date)
+      new DateParser(/anything/).process('', date)
     ).toBeInstanceOf(Date)
 
     expect(
-      new DateParser(/anything/).process('anything')
+      new DateParser(/anything/).process('', 'anything')
     ).toBeInstanceOf(Date)
 
     expect(
-      new DateParser(/anything/).process({})
+      new DateParser(/anything/).process('', {})
     ).toBeInstanceOf(Date)
 
     expect(
-      new DateParser(/anything/).process(dateJSON)
+      new DateParser(/anything/).process('', dateJSON)
     ).toEqual(date)
 
   })

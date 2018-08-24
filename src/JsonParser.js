@@ -1,9 +1,11 @@
 'use strict'
-import {ParserInterface} from './parsers/ParserInterface'
-import {DateParser} from './parsers/DateParser'
+import {ReviverParserInterface} from './reviverParsers/ReviverParserInterface'
+import {DateParser} from './reviverParsers/DateParser'
 import {assert} from 'flexio-jshelpers'
 
-const _parser_ = Symbol('_parser_')
+const _reviverParser_ = Symbol('_reviverParser_')
+const _nativeJSONparse_ = Symbol('_nativeJSONparse_')
+const _objectParse_ = Symbol('_objectParse')
 
 /**
  * @class
@@ -12,10 +14,10 @@ export class JsonParser {
   constructor() {
     /**
      *
-     * @type {Map<string, ParserInterface>}
+     * @type {Map<string, ReviverParserInterface>}
      * @private
      */
-    this[_parser_] = new Map()
+    this[_reviverParser_] = new Map()
   }
 
   /**
@@ -23,20 +25,20 @@ export class JsonParser {
    * @return {JsonParser}
    */
   withDateParserUTCISO8601() {
-    this.addParser(DateParser.DateParserUTCISO8601())
+    this.addReviverParser(DateParser.DateParserUTCISO8601())
     return this
   }
 
   /**
    *
-   * @param {ParserInterface} parser
+   * @param {ReviverParserInterface} parser
    * @return {Symbol} token
    */
-  addParser(parser) {
-    assert(parser instanceof ParserInterface,
-      'JsonParser:addParser: `parser` should be an instance of ParserInterface')
+  addReviverParser(parser) {
+    assert(parser instanceof ReviverParserInterface,
+      'JsonParser:addReviverParser: `parser` should be an instance of ReviverParserInterface')
     const token = Symbol(parser.constructor.name)
-    this[_parser_].set(token, parser)
+    this[_reviverParser_].set(token, parser)
     return token
   }
 
@@ -46,14 +48,34 @@ export class JsonParser {
    * @return {*}
    */
   parse(json) {
+    return this[_objectParse_](this[_nativeJSONparse_](json))
+  }
+
+  /**
+   *
+   * @param {string} json
+   * @return {object}
+   * @private
+   */
+  [_nativeJSONparse_](json) {
     return JSON.parse(json, (key, value) => {
-      for (const parser of this[_parser_]) {
-        if (parser[1].test(value)) {
-          return parser[1].process(value)
+      for (const parser of this[_reviverParser_]) {
+        if (parser[1].test(key, value)) {
+          return parser[1].process(key, value)
         }
       }
       return value
     })
+  }
+
+  /**
+   *
+   * @param obj
+   * @return {*}
+   * @private
+   */
+  [_objectParse_](obj) {
+    return obj
   }
 }
 

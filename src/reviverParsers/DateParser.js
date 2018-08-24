@@ -1,4 +1,4 @@
-import {ParserInterface} from './ParserInterface'
+import {ReviverParserInterface} from './ReviverParserInterface'
 import {assert, isRegex} from 'flexio-jshelpers'
 
 /**
@@ -10,9 +10,9 @@ export const UTC_ISO8601_RE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/
 const _DateFormatRE_ = Symbol(_DateFormatRE_)
 
 /**
- * @implements ParserInterface
+ * @implements ReviverParserInterface
  */
-export class DateParser extends ParserInterface {
+export class DateParser extends ReviverParserInterface {
   /**
    *
    * @param {RegExp} regex
@@ -40,19 +40,21 @@ export class DateParser extends ParserInterface {
 
   /**
    *
+   * @param {string} key
    * @param {*} value
    * @return {boolean}
    */
-  test(value) {
+  test(key, value) {
     return this[_DateFormatRE_].test(value)
   }
 
   /**
    *
+   * @param {string} key
    * @param {*} value
    * @return {Date}
    */
-  process(value) {
+  process(key, value) {
     return new Date(value)
   }
 

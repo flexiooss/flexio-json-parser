@@ -19,14 +19,14 @@
 
     <h1 class="page-title">Source: parsers/DateParser.js</h1>
 
-    
 
 
 
-    
+
+
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import {ParserInterface} from './ParserInterface'
+            <pre class="prettyprint source linenums"><code>import {ReviverParserInterface} from './ReviverParserInterface'
 import {assert, isRegex} from 'flexio-jshelpers'
 
 /**
@@ -38,9 +38,9 @@ export const UTC_ISO8601_RE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/
 const _DateFormatRE_ = Symbol(_DateFormatRE_)
 
 /**
- * @implements ParserInterface
+ * @implements ReviverParserInterface
  */
-export class DateParser extends ParserInterface {
+export class DateParser extends ReviverParserInterface {
   /**
    *
    * @param {RegExp} regex
@@ -95,7 +95,7 @@ export class DateParser extends ParserInterface {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DateParser.html">DateParser</a></li><li><a href="JsonParser.html">JsonParser</a></li></ul><h3>Interfaces</h3><ul><li><a href="ParserInterface.html">ParserInterface</a></li></ul><h3>Global</h3><ul><li><a href="global.html#UTC_ISO8601_RE">UTC_ISO8601_RE</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DateParser.html">DateParser</a></li><li><a href="JsonParser.html">JsonParser</a></li></ul><h3>Interfaces</h3><ul><li><a href="ParserInterface.html">ReviverParserInterface</a></li></ul><h3>Global</h3><ul><li><a href="global.html#UTC_ISO8601_RE">UTC_ISO8601_RE</a></li></ul>
 </nav>
 
 <br class="clear">

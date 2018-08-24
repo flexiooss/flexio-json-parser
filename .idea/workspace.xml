@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a35fb2f-fdce-4abf-9661-a147fa515d11" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/parsers/DateParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/DateParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__tests__/DataConstructorByKeyParser.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/DataConstructorByKeyInterface.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/DataConstructorByKeyParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reviverParsers/ReviverParserInterface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/DateParser.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/DateParser.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/DateParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/DateParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/JsonParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/JsonParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/JsonParser.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/JsonParser.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ParserInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ParserInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/global.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/global.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/parsers_DateParser.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/parsers_DateParser.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/parsers_ParserInterface.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/parsers_ParserInterface.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JsonParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JsonParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/DateParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reviverParsers/DateParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/ParserInterface.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +36,8 @@
       <file leaf-file-name="JsonParser.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__tests__/JsonParser.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="891">
+              <caret line="33" column="17" selection-start-line="33" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -28,8 +45,20 @@
       <file leaf-file-name="DateParser.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__tests__/DateParser.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="233">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataConstructorByKeyParser.test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/__tests__/DataConstructorByKeyParser.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1823">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,8 +66,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="135">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -46,8 +75,8 @@
       <file leaf-file-name="JsonParser.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JsonParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="1268">
+              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding>
                 <element signature="e#13#70#0" expanded="true" />
               </folding>
@@ -55,11 +84,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateParser.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/parsers/DateParser.js">
+      <file leaf-file-name="DataConstructorByKeyParser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/DataConstructorByKeyParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state>
+              <caret column="39" selection-start-column="13" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataConstructorByKeyInterface.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/DataConstructorByKeyInterface.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateParser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reviverParsers/DateParser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -67,11 +114,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParserInterface.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parsers/ParserInterface.js">
+      <file leaf-file-name="ReviverParserInterface.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reviverParsers/ReviverParserInterface.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            <state relative-caret-position="351">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="16" column="28" selection-start-line="16" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -85,6 +141,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>DateParser</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>KeyConstructorParser</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -95,13 +159,21 @@
         <option value="$PROJECT_DIR$/src/JsonParser" />
         <option value="$PROJECT_DIR$/src/Date.js" />
         <option value="$PROJECT_DIR$/src/DateParser.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/__tests__/JsonParser.test.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/__tests__/DateParser.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/parsers/ParserInterface.js" />
-        <option value="$PROJECT_DIR$/src/JsonParser.js" />
         <option value="$PROJECT_DIR$/src/parsers/DateParser.js" />
+        <option value="$PROJECT_DIR$/__tests__/DateParser.test.js" />
+        <option value="$PROJECT_DIR$/src/reviverParsers/ReviverParserInterface.js" />
+        <option value="$PROJECT_DIR$/src/NativeJSONparse.js" />
+        <option value="$PROJECT_DIR$/src/JsonParser.js" />
+        <option value="$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/KeyConstructorInterface.js" />
+        <option value="$PROJECT_DIR$/__tests__/KeyConstructorParser.test.js" />
+        <option value="$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/DataConstructorByKeyInterface.js" />
+        <option value="$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/DataConstructorByKeyParser.js" />
+        <option value="$PROJECT_DIR$/__tests__/DataConstructorByKeyParser.test.js" />
       </list>
     </option>
   </component>
@@ -120,7 +192,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="width" value="1920" />
+    <option name="width" value="1910" />
     <option name="height" value="2160" />
   </component>
   <component name="ProjectView">
@@ -149,7 +221,14 @@
               <item name="flexio-json-parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="flexio-json-parser" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
+              <item name="reviverParsers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexio-json-parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexio-json-parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reviverParsers" type="462c0819:PsiDirectoryNode" />
+              <item name="KeyConstructorParser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,12 +247,13 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/parsers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/__tests__" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser" />
+      <recent name="$PROJECT_DIR$/src/parsers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,7 +323,11 @@
       <option name="presentableId" value="Default" />
       <updated>1534835311646</updated>
       <workItem from="1534835313162" duration="3826000" />
-      <workItem from="1534840653093" duration="17172000" />
+      <workItem from="1534840653093" duration="17576000" />
+      <workItem from="1534928626533" duration="620000" />
+      <workItem from="1535005954604" duration="3511000" />
+      <workItem from="1535115759251" duration="944000" />
+      <workItem from="1535117171249" duration="4135000" />
     </task>
     <servers />
   </component>
@@ -253,29 +337,29 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20998000" />
+    <option name="totallyTimeSpent" value="30612000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="2160" extended-state="4" />
+    <frame x="0" y="0" width="1910" height="2160" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24583334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16230367" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963854" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.46624878" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.16771084" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297975" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +369,68 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="28" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__tests__/JsonParser.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__tests__/DateParser.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JsonParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#13#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reviverParsers/DateParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reviverParsers/ReviverParserInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/__tests__/JsonParser.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -336,16 +482,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/jest.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jest.config.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/private/private.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2320" />
@@ -355,21 +492,12 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/is-primitive/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/is-number/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -395,11 +523,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/domutils/lib/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1938">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1938" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/domutils/lib/traversal.js">
@@ -440,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/flexio-jshelpers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -457,31 +574,38 @@
     <entry file="file://$PROJECT_DIR$/node_modules/flexio-jshelpers/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="28" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/__tests__/JsonParser.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="891">
+          <caret line="33" column="17" selection-start-line="33" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/src/reviverParsers/ReviverParserInterface.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="351">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parsers/ParserInterface.js">
+    <entry file="file://$PROJECT_DIR$/src/NativeJSONparse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        <state>
+          <caret column="28" selection-start-column="13" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JsonParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="1268">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
           <folding>
             <element signature="e#13#70#0" expanded="true" />
           </folding>
@@ -490,17 +614,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/__tests__/DateParser.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="233">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parsers/DateParser.js">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="135">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/DataConstructorByKeyInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reviverParsers/DateParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reviverParsers/KeyConstructorParser/DataConstructorByKeyParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__tests__/DataConstructorByKeyParser.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1823">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

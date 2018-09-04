@@ -3,6 +3,7 @@ import {
   DataConstructorByKeyInterface,
   keyConstructor
 } from '../src/reviverParsers/KeyConstructorParser/DataConstructorByKeyInterface'
+import {DataConstructorKey} from '../src/reviverParsers/KeyConstructorParser/DataConstructorKey'
 
 class Data extends DataConstructorByKeyInterface {
   constructor(a, b) {
@@ -12,15 +13,11 @@ class Data extends DataConstructorByKeyInterface {
   }
 
   toJSON() {
-    return {
-      [keyConstructor]: Data.constructor.name,
-      a: this.a,
-      b: this.b
-    }
+    return DataConstructorKey.addDataConstructorKey(this)
   }
 
   static fromJSON(obj) {
-    return new Data(obj.a, obj.b)
+    return new Data(obj.a || '', obj.b || '')
   }
 }
 
@@ -32,15 +29,11 @@ class DataBis extends DataConstructorByKeyInterface {
   }
 
   toJSON() {
-    return {
-      [keyConstructor]: Data.constructor.name,
-      aa: this.a,
-      ba: this.b
-    }
+    return DataConstructorKey.addDataConstructorKey(this)
   }
 
   static fromJSON(obj) {
-    return new Data(obj.a, obj.b)
+    return new DataBis(obj.a || '', obj.b || '')
   }
 }
 
@@ -77,7 +70,7 @@ describe('DataConstructorByKeyParser', () => {
     ).toBe(false)
 
     expect(
-      new DataConstructorByKeyParser(instanceDataArgument).test('', dataToTest)
+      new DataConstructorByKeyParser(instanceDataArgument).test('', dataToTestWithoutPrototype)
     ).toBe(true)
 
     expect(

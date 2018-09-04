@@ -1,5 +1,3 @@
-export const keyConstructor = '__@constructor@__'
-
 /**
  * @interface
  */
@@ -12,7 +10,7 @@ export class DataConstructorByKeyInterface {
    * @constructor
    * @static
    */
-  static fromJSON(obj){
+  static fromJSON(obj) {
     throw Error('`fromJSON` fromJSON method should be override')
   }
 }
